@@ -1,0 +1,36 @@
+.story { padding: 0; }
+.st-pin { position: relative; }
+.st-track { display: grid; gap: clamp(72px, 12vw, 140px); padding: clamp(96px, 14vw, 180px) var(--gutter); }
+.st-head { max-width: 760px; }
+.st-panel { position: relative; display: grid; grid-template-columns: 1fr; gap: 28px; padding-top: clamp(84px, 20vw, 150px); }
+.st-num {
+  position: absolute; top: 0; left: -0.04em; font-size: clamp(120px, 26vw, 300px); line-height: 0.8; letter-spacing: -0.06em;
+  color: transparent; -webkit-text-stroke: 1px rgb(239 235 228 / 0.22); pointer-events: none; font-style: italic;
+}
+.st-text { position: relative; display: grid; gap: 18px; align-content: start; max-width: 520px; }
+.st-tool { display: inline-flex; align-items: center; gap: 10px; font: 500 12px/1 var(--font-m); letter-spacing: 0.18em; text-transform: uppercase; color: var(--m-light); }
+.st-title { font-size: clamp(44px, 6vw, 92px); line-height: 0.95; }
+.st-body { color: var(--on-ink-muted); font-size: clamp(16px, 1.3vw, 19px); }
+.st-art { position: relative; margin: 30px 30px 30px 30px; padding: clamp(16px, 3vw, 36px); background: var(--ink-2); color: var(--on-ink); max-width: 620px; }
+.st-art .crop { color: var(--on-ink-muted); }
+.st-ruler { display: none; }
+
+@media (min-width: 1024px) and (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
+  .st-pin { height: 100vh; overflow: hidden; }
+  .st-track { display: flex; align-items: center; height: 100%; width: max-content; gap: 0; padding: 0; }
+  .st-head { flex: none; width: 46vw; padding: 0 6vw 0 var(--gutter); }
+  .st-panel { flex: none; width: min(88vw, 1180px); height: 100%; grid-template-columns: 0.85fr 1fr; align-items: center; gap: 4vw; padding: 0 5vw; border-left: 1px solid var(--line-ink); }
+  .st-num { top: 12vh; left: 4vw; }
+  .st-text { padding-top: 14vh; }
+  .st-art { margin: 0; }
+  .st-ruler {
+    position: absolute; left: var(--gutter); right: var(--gutter); bottom: 34px; display: flex; align-items: center; gap: 22px;
+    font: 500 12px/1 var(--font-m); letter-spacing: 0.18em; text-transform: uppercase; color: var(--on-ink-muted);
+  }
+  .st-count b { color: var(--on-ink); font-weight: 500; }
+  .st-bar { position: relative; flex: 1; height: 1px; background: var(--line-ink); }
+  .st-fill { position: absolute; inset: -1px 0; background: var(--m); transform: scaleX(0); transform-origin: left; }
+}
+@media (min-width: 720px) and (max-width: 1023px), (min-width: 1024px) and (hover: none), (min-width: 1024px) and (prefers-reduced-motion: reduce) {
+  .st-panel { grid-template-columns: 1fr 1fr; align-items: center; }
+}

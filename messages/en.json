@@ -1,0 +1,220 @@
+{
+  "meta": {
+    "title": "Abigail Caricato · Graphic design and art direction",
+    "description": "Brand identity, editorial, packaging and motion. Design that prints itself on memory, from the first sketch to the final file.",
+    "ogAlt": "Abigail Caricato, graphic design and art direction"
+  },
+  "loader": {
+    "label": "Color proof",
+    "ready": "In register",
+    "skip": "Skip"
+  },
+  "nav": {
+    "skip": "Skip to content",
+    "home": "Abigail Caricato, home",
+    "story": "Story",
+    "work": "Work",
+    "tools": "Tools",
+    "process": "Process",
+    "contact": "Contact",
+    "menu": "Menu",
+    "close": "Close",
+    "lang": "Language",
+    "langOther": "Español",
+    "langOtherShort": "ES"
+  },
+  "hero": {
+    "kicker": "Graphic design · Art direction",
+    "first": "Abigail",
+    "last": "Caricato",
+    "tagline": "Design that prints itself on memory.",
+    "intro": "Brands, magazines, packaging and pieces in motion. Every project, from the first sketch to the print-ready file.",
+    "ctaWork": "See the work",
+    "ctaStory": "Read her story",
+    "specs": ["CMYK", "300 dpi", "3 mm bleed", "All in register"],
+    "sheet": "Sheet 00 · Cover",
+    "scroll": "Scroll"
+  },
+  "marquee": ["Brand identity", "Editorial", "Packaging", "Motion graphics", "Art direction", "Illustration", "Typography", "Photo retouching", "Posters"],
+  "story": {
+    "label": "Story",
+    "title": "Six sheets.",
+    "lead": "A story told the way a printed piece is built: layer by layer, until everything is in register.",
+    "progress": "Sheet",
+    "chapters": [
+      {
+        "title": "The kitchen table",
+        "body": "Old magazines, scissors and glue. Before she knew what design was, Abigail was already making collages: one image on top of another until something new appeared.",
+        "tool": "Collage"
+      },
+      {
+        "title": "Layers",
+        "body": "Her first computer came with Photoshop, and with it an idea she never let go of: every image is a stack of decisions. Any step can be undone. The eye can't.",
+        "tool": "Photoshop"
+      },
+      {
+        "title": "Vectors",
+        "body": "Illustrator taught her patience: a Bézier curve is tuned one anchor at a time. That is where her first brands were born, and her obsession with type.",
+        "tool": "Illustrator"
+      },
+      {
+        "title": "Grid",
+        "body": "InDesign taught her the rhythm of a page: columns, margins and air. A well-set magazine reads without anyone noticing the grid.",
+        "tool": "InDesign"
+      },
+      {
+        "title": "Motion",
+        "body": "After Effects and Premiere gave design a sense of time. A logo that arrives on the beat says more than one that just sits there.",
+        "tool": "After Effects · Premiere Pro"
+      },
+      {
+        "title": "Today",
+        "body": "She designs whole systems: from a brand to its campaign, from the sketch to a PDF that reaches the printer without a single error. The full Adobe suite in the service of one clear idea.",
+        "tool": "Creative Cloud"
+      }
+    ]
+  },
+  "work": {
+    "label": "Work",
+    "title": "Selected work.",
+    "lead": "Six concept projects: fictional brands and imagined briefs, solved end to end.",
+    "badge": "Concept project",
+    "fictional": "Fictional brand",
+    "open": "View project",
+    "close": "Close",
+    "next": "Next",
+    "prev": "Previous",
+    "fields": {
+      "brief": "The brief",
+      "idea": "The idea",
+      "system": "The system",
+      "deliverables": "Deliverables",
+      "tools": "Tools",
+      "palette": "Palette",
+      "type": "Typography"
+    },
+    "projects": [
+      {
+        "id": "nacar",
+        "name": "Nácar",
+        "client": "Studio jewellery",
+        "discipline": "Brand identity",
+        "brief": "A jeweller working in silver and mother-of-pearl needed an identity as delicate as the pieces, and firm enough to live on a five-centimetre box.",
+        "idea": "The brand is born from the sheen of nacre: an N of hairlines and heavy strokes, as if engraved, on a disc that changes colour with the light.",
+        "system": "Monogram, wordmark in a high-contrast serif, a pearl-and-ink palette, and a pattern of fine waves, like the grain of nacre.",
+        "deliverables": ["Monogram and wordmark", "Brand guidelines", "Cards and tags", "Box and bag"],
+        "palette": [["Pearl", "#EDE6DD"], ["Ink", "#151317"], ["Nacre", "#C9B8D6"], ["Silver", "#A7A9AC"]]
+      },
+      {
+        "id": "umbral",
+        "name": "Umbral",
+        "client": "Architecture magazine",
+        "discipline": "Editorial design",
+        "brief": "A quarterly architecture magazine wanted to return to print with layouts that breathe like the buildings it publishes.",
+        "idea": "Every issue is built on a twelve-column grid that stays visible: fine lines the cover shows without shame.",
+        "system": "Typographic covers, a modular grid, three levels of hierarchy and full-bleed photography.",
+        "deliverables": ["Cover and layout", "Grid and styles", "InDesign templates", "Prepress"],
+        "palette": [["Concrete", "#D9D6CF"], ["Graphite", "#2B2B2E"], ["Signal", "#E4572E"]]
+      },
+      {
+        "id": "olalenta",
+        "name": "Ola Lenta",
+        "client": "Slow cinema festival",
+        "discipline": "Posters and motion",
+        "brief": "A festival of contemplative cinema needed a poster series that invited people to slow down.",
+        "idea": "Three posters, three speeds: the same wave stretches from one poster to the next until it is almost still.",
+        "system": "Poster series, social pieces and short animations, all built from the same wave.",
+        "deliverables": ["Series of three posters", "Social pieces", "6-second animations"],
+        "palette": [["Night", "#101626"], ["Mist", "#8FA3BF"], ["Beacon", "#F2C14E"]]
+      },
+      {
+        "id": "almacigo",
+        "name": "Almácigo",
+        "client": "Garden seeds",
+        "discipline": "Packaging and illustration",
+        "brief": "A seed brand for urban gardens wanted packets that could be understood at a glance on the shelf.",
+        "idea": "Each variety has its own illustration and colour; when to sow is read on a graphic calendar, with no small print.",
+        "system": "Packet system, vector illustrations per variety, a sowing calendar and the die line.",
+        "deliverables": ["Six packets", "Illustrations", "Die line and final art", "Display stand"],
+        "palette": [["Soil", "#6B4F3A"], ["Sprout", "#7FA650"], ["Tomato", "#D9472B"], ["Paper", "#F1EAD8"]]
+      },
+      {
+        "id": "vertigo",
+        "name": "Vértigo",
+        "client": "Thriller series",
+        "discipline": "Title sequence",
+        "brief": "A thriller series needed a thirty-second title sequence.",
+        "idea": "Lines spin towards the centre like a spiral staircase; the title appears when the vertigo stops.",
+        "system": "Storyboard, kinetic type, rhythm cut to the sound and versions for social.",
+        "deliverables": ["30-second sequence", "Storyboard", "6 and 15-second cuts"],
+        "palette": [["Void", "#0B0B0D"], ["Bone", "#E8E2D6"], ["Alarm", "#C1121F"]]
+      },
+      {
+        "id": "lumbre",
+        "name": "Lumbre",
+        "client": "Scented candles",
+        "discipline": "Art direction and retouching",
+        "brief": "A candle brand wanted a warm campaign that didn't fall into the obvious.",
+        "idea": "The whole campaign is lit by the flame: one light source, deep backgrounds and retouching that keeps the texture of the wax.",
+        "system": "Art direction, retouching and colour, posters and social pieces.",
+        "deliverables": ["Key visual", "Retouching and colour", "Posters", "Social pieces"],
+        "palette": [["Smoke", "#1A1412"], ["Wax", "#EADBC8"], ["Flame", "#F29E38"]]
+      }
+    ]
+  },
+  "tools": {
+    "label": "Tools",
+    "title": "The full suite.",
+    "lead": "She knows every Adobe tool inside out and picks the right one for each stage. Each one here with a shortcut worth having at your fingertips.",
+    "shortcut": "Shortcut",
+    "panel": "Layers",
+    "also": "And also",
+    "alsoList": ["Figma", "Procreate", "Blender", "Cinema 4D", "DaVinci Resolve"],
+    "items": [
+      { "id": "ps", "name": "Photoshop", "role": "Retouching, compositing and photomontage", "key": "⌘ J", "keyLabel": "Duplicate layer" },
+      { "id": "ai", "name": "Illustrator", "role": "Brands, illustration and vectors", "key": "P", "keyLabel": "Pen" },
+      { "id": "id", "name": "InDesign", "role": "Editorial, catalogues and prepress", "key": "⌘ D", "keyLabel": "Place" },
+      { "id": "ae", "name": "After Effects", "role": "Motion graphics and titles", "key": "U", "keyLabel": "Reveal keyframes" },
+      { "id": "pr", "name": "Premiere Pro", "role": "Video editing", "key": "C", "keyLabel": "Razor" },
+      { "id": "lr", "name": "Lightroom", "role": "Developing and colour", "key": "R", "keyLabel": "Crop" },
+      { "id": "ac", "name": "Acrobat Pro", "role": "Prepress control", "key": "PDF/X-4", "keyLabel": "Preflight" },
+      { "id": "ff", "name": "Firefly", "role": "Exploration with generative AI", "key": "Prompt", "keyLabel": "Text to image" },
+      { "id": "s3", "name": "Substance 3D", "role": "3D mockups and materials", "key": "PBR", "keyLabel": "Materials" }
+    ],
+    "demo": {
+      "layer": "Layer",
+      "prompt": "poster, wave, sunset",
+      "checks": ["CMYK", "300 dpi", "3 mm bleed", "Embedded fonts", "PDF/X-4"]
+    }
+  },
+  "process": {
+    "label": "Process",
+    "title": "From brief to final art.",
+    "steps": [
+      { "name": "Brief", "body": "Listen first: what needs saying, to whom and with what resources." },
+      { "name": "Research", "body": "References, competitors and context. A moodboard with judgement, not a pile of images." },
+      { "name": "Sketches", "body": "Plenty of ideas on paper before opening the computer. Two or three are chosen to develop." },
+      { "name": "System", "body": "The idea becomes rules: colour, type, grid and how it applies to every piece." },
+      { "name": "Final art", "body": "Files checked for print or screen: CMYK, 300 dpi, bleed and fonts included." }
+    ]
+  },
+  "manifesto": {
+    "label": "Manifesto",
+    "text": "Good design goes unnoticed. It is felt, remembered and chosen again."
+  },
+  "contact": {
+    "label": "Contact",
+    "title": "Got a project?",
+    "title2": "Let's talk.",
+    "body": "A new brand, a magazine, a package or a campaign. Tell her your idea and start with the first sketch.",
+    "email": "Send an email",
+    "pending": "Contact channels: coming soon.",
+    "channels": "Channels"
+  },
+  "footer": {
+    "rights": "© 2026 Abigail Caricato",
+    "colophon": "Set in Bodoni Moda, Hanken Grotesk and DM Mono.",
+    "note": "The projects are concepts: fictional brands and briefs.",
+    "top": "Back to top"
+  }
+}

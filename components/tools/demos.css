@@ -1,0 +1,63 @@
+.demo { width: 100%; height: auto; color: inherit; overflow: visible; }
+/* animated parts transform around their own box; static parts keep their SVG transform attributes intact */
+.cl, .pen-a, .gd-col, .gd-txt, .lr-crop, .lr-h, .ff-v, .ff-p, .cc-p { transform-box: fill-box; }
+
+/* rest frames (what you see when nothing runs, and with reduced motion) */
+.demo-ps .ly { transform: translate(calc((var(--k) - 1) * 54px), calc((1 - var(--k)) * 46px)); transform-box: view-box; }
+.demo-ai .pen { stroke-dasharray: 1; stroke-dashoffset: 0; }
+.demo-pr .rz-b { transform: translateX(12px); }
+.demo-lr .lr-crop { transform: scale(0.86); transform-origin: center; }
+.demo-ae .kf-curve { stroke-dasharray: 1; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .demo[data-run] .cl { animation: cl-in 5.2s var(--ease) infinite both; animation-delay: calc(var(--k) * 0.32s); transform-origin: center; }
+  @keyframes cl-in { 0% { opacity: 0; transform: translateY(-46px) rotate(-8deg) scale(1.06); } 14%, 84% { opacity: 1; transform: none; } 100% { opacity: 0; } }
+  .demo[data-run] .cl-scissor { animation: snip 0.6s ease-in-out infinite alternate; transform-origin: 60px 308px; transform-box: view-box; }
+  @keyframes snip { to { transform: rotate(8deg); } }
+
+  .demo[data-run] .ly { animation: ly 4.4s cubic-bezier(0.7, 0, 0.2, 1) infinite alternate; }
+  @keyframes ly { 0%, 15% { transform: none; } 70%, 100% { transform: translate(calc((var(--k) - 1) * 54px), calc((1 - var(--k)) * 46px)); } }
+
+  .demo[data-run] .pen { animation: pen 4.2s cubic-bezier(0.65, 0, 0.35, 1) infinite; }
+  @keyframes pen { 0% { stroke-dashoffset: 1; } 62%, 100% { stroke-dashoffset: 0; } }
+  .demo[data-run] .pen-a { animation: pop 4.2s var(--ease) infinite; animation-delay: calc(var(--k) * 1.2s); transform-origin: center; }
+  .demo[data-run] .pen-h { animation: fade 4.2s ease infinite; }
+  @keyframes pop { 0% { transform: scale(0); } 10%, 100% { transform: scale(1); } }
+  @keyframes fade { 0%, 30% { opacity: 0; } 50%, 100% { opacity: 1; } }
+
+  .demo[data-run] .gd-col { animation: col 5s var(--ease) infinite; animation-delay: calc(var(--k) * 0.08s); transform-origin: top; }
+  .demo[data-run] .gd-txt { animation: txt 5s var(--ease) infinite; animation-delay: calc(0.6s + var(--k) * 0.12s); transform-origin: left; }
+  @keyframes col { 0% { transform: scaleY(0); } 20%, 100% { transform: none; } }
+  @keyframes txt { 0% { transform: scaleX(0); } 18%, 100% { transform: none; } }
+
+  .demo[data-run] .kf-curve { animation: pen 3.6s cubic-bezier(0.65, 0, 0.35, 1) infinite; }
+  .demo[data-run] .kf-dot { animation: kf 1.8s cubic-bezier(0.8, 0, 0.2, 1) infinite alternate; }
+  @keyframes kf { to { transform: translateX(360px); } }
+
+  .demo[data-run] .rz-head { animation: head 4s linear infinite; }
+  @keyframes head { to { transform: translateX(400px); } }
+  .demo[data-run] .rz-cut { animation: cut 4s steps(1) infinite; }
+  @keyframes cut { 0% { opacity: 0; } 68% { opacity: 1; } }
+  .demo[data-run] .rz-b { animation: split 4s var(--ease) infinite; }
+  @keyframes split { 0%, 68% { transform: none; } 80%, 100% { transform: translateX(12px); } }
+
+  .demo[data-run] .lr-crop { animation: crop 2.6s cubic-bezier(0.7, 0, 0.2, 1) infinite alternate; }
+  @keyframes crop { from { transform: none; } to { transform: scale(0.86); } }
+  .demo[data-run] .lr-h { animation: bar 1.6s ease-in-out infinite alternate; animation-delay: calc(var(--k) * -0.13s); transform-origin: bottom; }
+  @keyframes bar { to { transform: scaleY(0.6); } }
+
+  .demo[data-run] .pf { animation: chk 5s var(--ease) infinite both; animation-delay: calc(var(--k) * 0.4s); }
+  @keyframes chk { 0% { opacity: 0; transform: translateX(-16px); } 10%, 88% { opacity: 1; transform: none; } 100% { opacity: 0; } }
+
+  .demo[data-run] .ff-p { animation: type 5.4s steps(22) infinite; }
+  @keyframes type { 0% { clip-path: inset(0 100% 0 0); } 40%, 100% { clip-path: inset(0 0 0 0); } }
+  .demo[data-run] .ff-v { animation: var 5.4s var(--ease) infinite both; animation-delay: calc(2.2s + var(--k) * 0.18s); transform-origin: center; }
+  @keyframes var { 0% { opacity: 0; transform: scale(0.94); } 12%, 80% { opacity: 1; transform: none; } 100% { opacity: 0; } }
+
+  .demo[data-run] .s3-spec { animation: orbit 5s ease-in-out infinite; }
+  @keyframes orbit { 0%, 100% { transform: none; } 25% { transform: translate(80px, 14px); } 50% { transform: translate(96px, 96px); } 75% { transform: translate(8px, 86px); } }
+
+  .demo[data-run] .cc-p { animation: reg 4.6s cubic-bezier(0.7, 0, 0.2, 1) infinite; }
+  .demo[data-run] .cc-c { --x: -70px; --y: -36px; } .demo[data-run] .cc-m { --x: 64px; --y: -30px; } .demo[data-run] .cc-y { --x: 4px; --y: 70px; }
+  @keyframes reg { 0%, 8% { transform: translate(var(--x), var(--y)); } 55%, 100% { transform: none; } }
+}

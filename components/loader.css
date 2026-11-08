@@ -1,0 +1,16 @@
+.loader { display: none; }
+.js .loader {
+  position: fixed; inset: 0; z-index: 500; display: grid; place-items: center;
+  background: var(--ink); color: var(--on-ink); clip-path: inset(0% 0% 0% 0%);
+}
+.ld-inner { display: grid; justify-items: center; gap: 18px; }
+.ld-reg { width: 96px; height: 96px; color: var(--on-ink-muted); }
+.ld-reg circle, .ld-reg path { stroke-dasharray: 1; stroke-dashoffset: 1; }
+.ld-count { font: 400 clamp(88px, 16vw, 168px)/0.9 var(--font-d); letter-spacing: -0.04em; font-variant-numeric: tabular-nums lining-nums; }
+.ld-count span { font-size: 0.35em; margin-left: 6px; font-style: italic; color: var(--m-light); }
+.ld-label { font: 500 12px/1 var(--font-m); letter-spacing: 0.24em; text-transform: uppercase; color: var(--on-ink-muted); }
+.ld-plates { display: grid; grid-template-columns: repeat(4, 56px); gap: 8px; margin-top: 10px; }
+.ld-plate { display: grid; gap: 6px; }
+.ld-plate i { display: block; height: 4px; transform: scaleX(0); transform-origin: left; }
+.ld-plate i.c { background: var(--c); } .ld-plate i.m { background: var(--m); } .ld-plate i.y { background: var(--y); } .ld-plate i.k { background: var(--on-ink); }
+.ld-plate em { font: 500 12px/1 var(--font-m); font-style: normal; color: var(--on-ink-muted); }

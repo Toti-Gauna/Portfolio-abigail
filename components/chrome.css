@@ -1,0 +1,53 @@
+/* The header takes the colour of the sheet under it (data-hdr on each section) and a soft ground once the page scrolls. */
+.hdr {
+  position: fixed; inset: 0 0 auto 0; z-index: 200; height: var(--header-h);
+  display: flex; align-items: center; gap: 28px; padding: 0 var(--gutter);
+  color: var(--on-paper); transition: color 0.4s var(--ease);
+}
+.hdr::before { content: ''; position: absolute; inset: 0; z-index: -1; opacity: 0; transition: opacity 0.4s var(--ease), background-color 0.4s var(--ease);
+  background: rgb(238 235 229 / 0.86); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); border-bottom: 1px solid var(--line-paper); }
+.hdr[data-scrolled]::before { opacity: 1; }
+.hdr[data-theme='ink'] { color: var(--on-ink); }
+.hdr[data-theme='ink']::before { background: rgb(13 12 14 / 0.82); border-bottom-color: var(--line-ink); }
+.hdr[data-theme='magenta']::before { background: rgb(228 0 124 / 0.9); border-bottom-color: rgb(13 12 14 / 0.2); }
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .hdr::before { background: var(--paper); } .hdr[data-theme='ink']::before { background: var(--ink); } .hdr[data-theme='magenta']::before { background: var(--m); }
+}
+.hdr a { text-decoration: none; }
+.hdr-brand { display: inline-flex; align-items: center; gap: 14px; margin-right: auto; min-height: 44px; }
+.hdr-mono, .mn-mono { font: 400 30px/1 var(--font-d); letter-spacing: -0.04em; }
+.hdr-mono em, .mn-mono em { font-style: italic; }
+.hdr-name { font: 500 12px/1 var(--font-m); letter-spacing: 0.2em; text-transform: uppercase; }
+.hdr-nav ol { display: flex; gap: 28px; }
+.hdr-nav a { position: relative; display: inline-flex; align-items: baseline; gap: 8px; min-height: 44px; align-items: center; font: 500 13px/1 var(--font-s); letter-spacing: 0.02em; }
+.hdr-nav a span { font: 500 12px/1 var(--font-m); opacity: 0.6; }
+.hdr-nav a::after { content: ''; position: absolute; left: 0; right: 0; bottom: 10px; height: 1px; background: currentColor; transform: scaleX(0); transform-origin: right; transition: transform 0.5s var(--ease); }
+.hdr-nav a:hover::after { transform: scaleX(1); transform-origin: left; }
+.hdr-lang { display: grid; place-items: center; min-width: 44px; min-height: 44px; border: 1px solid currentColor; border-radius: 999px; font: 500 12px/1 var(--font-m); letter-spacing: 0.12em; }
+.hdr-menu { display: none; align-items: center; gap: 12px; min-height: 44px; padding: 0 4px; font: 500 12px/1 var(--font-m); letter-spacing: 0.2em; text-transform: uppercase; }
+.hdr-menu i { position: relative; width: 26px; height: 9px; border-top: 1px solid currentColor; border-bottom: 1px solid currentColor; }
+@media (max-width: 1023px) {
+  .hdr-nav { display: none; }
+  .hdr-menu { display: inline-flex; }
+}
+@media (max-width: 520px) { .hdr-name { display: none; } }
+
+.mn {
+  position: fixed; inset: 0; width: 100%; height: 100%; max-width: none; max-height: none; border: 0; margin: 0;
+  background: var(--ink); color: var(--on-ink); padding: 0 var(--gutter) 28px; display: none; flex-direction: column;
+}
+.mn[open] { display: flex; }
+.mn::backdrop { background: transparent; }
+.mn-top { height: var(--header-h); display: flex; align-items: center; justify-content: space-between; }
+.mn-close { min-height: 44px; padding: 0 4px; font: 500 12px/1 var(--font-m); letter-spacing: 0.2em; text-transform: uppercase; }
+.mn nav { flex: 1; display: flex; align-items: center; }
+.mn ol { display: grid; gap: 4px; }
+.mn-clip { display: block; overflow: hidden; }
+.mn-link { display: inline-flex; align-items: baseline; gap: 16px; text-decoration: none; font: 400 clamp(48px, 13vw, 96px)/1.02 var(--font-d); letter-spacing: -0.03em; }
+.mn-link span { font: 500 12px/1 var(--font-m); color: var(--m-light); letter-spacing: 0.1em; }
+.mn-link:hover { font-style: italic; }
+.mn-foot { display: flex; align-items: center; justify-content: space-between; gap: 16px; border-top: 1px solid var(--line-ink); padding-top: 18px; }
+.mn-foot a { display: inline-flex; align-items: center; min-height: 44px; font: 500 13px/1 var(--font-m); letter-spacing: 0.14em; text-transform: uppercase; }
+.mn-bar { display: flex; gap: 6px; }
+.mn-bar i { width: 18px; height: 18px; border-radius: 50%; mix-blend-mode: screen; }
+.mn-bar i:nth-child(1) { background: var(--c); } .mn-bar i:nth-child(2) { background: var(--m); } .mn-bar i:nth-child(3) { background: var(--y); } .mn-bar i:nth-child(4) { background: var(--on-ink); }

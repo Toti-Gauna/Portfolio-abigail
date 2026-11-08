@@ -1,0 +1,220 @@
+{
+  "meta": {
+    "title": "Abigail Caricato · Diseño gráfico y dirección de arte",
+    "description": "Identidad de marca, editorial, packaging y motion. Diseño que se imprime en la memoria, del primer boceto al arte final.",
+    "ogAlt": "Abigail Caricato, diseño gráfico y dirección de arte"
+  },
+  "loader": {
+    "label": "Prueba de color",
+    "ready": "En registro",
+    "skip": "Saltar"
+  },
+  "nav": {
+    "skip": "Ir al contenido",
+    "home": "Abigail Caricato, inicio",
+    "story": "Historia",
+    "work": "Trabajo",
+    "tools": "Herramientas",
+    "process": "Proceso",
+    "contact": "Contacto",
+    "menu": "Menú",
+    "close": "Cerrar",
+    "lang": "Idioma",
+    "langOther": "English",
+    "langOtherShort": "EN"
+  },
+  "hero": {
+    "kicker": "Diseño gráfico · Dirección de arte",
+    "first": "Abigail",
+    "last": "Caricato",
+    "tagline": "Diseño que se imprime en la memoria.",
+    "intro": "Marcas, revistas, packaging y piezas en movimiento. Cada proyecto, del primer boceto al archivo listo para imprenta.",
+    "ctaWork": "Ver trabajo",
+    "ctaStory": "Conocer su historia",
+    "specs": ["CMYK", "300 dpi", "Sangrado 3 mm", "Todo en registro"],
+    "sheet": "Pliego 00 · Portada",
+    "scroll": "Bajá"
+  },
+  "marquee": ["Identidad de marca", "Editorial", "Packaging", "Motion graphics", "Dirección de arte", "Ilustración", "Tipografía", "Retoque fotográfico", "Cartelería"],
+  "story": {
+    "label": "Historia",
+    "title": "Seis pliegos.",
+    "lead": "Una historia contada como se arma una pieza impresa: capa por capa, hasta que todo queda en registro.",
+    "progress": "Pliego",
+    "chapters": [
+      {
+        "title": "La mesa de la cocina",
+        "body": "Revistas viejas, una tijera y plasticola. Antes de saber qué era el diseño, Abigail ya armaba collages: una imagen encima de otra hasta que aparecía algo nuevo.",
+        "tool": "Collage"
+      },
+      {
+        "title": "Capas",
+        "body": "Su primera computadora trajo Photoshop, y con él una idea que nunca soltó: toda imagen es una pila de decisiones. Se puede deshacer cualquier paso. La mirada, no.",
+        "tool": "Photoshop"
+      },
+      {
+        "title": "Vectores",
+        "body": "En Illustrator encontró la paciencia: una curva de Bézier se ajusta nodo por nodo. Ahí nacieron sus primeras marcas y su obsesión por la tipografía.",
+        "tool": "Illustrator"
+      },
+      {
+        "title": "Retícula",
+        "body": "InDesign le enseñó el ritmo de una página: columnas, márgenes y aire. Una revista bien diagramada se lee sin que nadie note la grilla.",
+        "tool": "InDesign"
+      },
+      {
+        "title": "Movimiento",
+        "body": "After Effects y Premiere le dieron tiempo al diseño. Un logo que entra a tiempo cuenta más que uno que solo está.",
+        "tool": "After Effects · Premiere Pro"
+      },
+      {
+        "title": "Hoy",
+        "body": "Diseña sistemas completos: de una marca a su campaña, del boceto al PDF que llega a imprenta sin un error. Toda la suite de Adobe al servicio de una idea clara.",
+        "tool": "Creative Cloud"
+      }
+    ]
+  },
+  "work": {
+    "label": "Trabajo",
+    "title": "Trabajo seleccionado.",
+    "lead": "Seis proyectos conceptuales: marcas ficticias y encargos imaginados, resueltos de punta a punta.",
+    "badge": "Proyecto conceptual",
+    "fictional": "Marca ficticia",
+    "open": "Ver proyecto",
+    "close": "Cerrar",
+    "next": "Siguiente",
+    "prev": "Anterior",
+    "fields": {
+      "brief": "El encargo",
+      "idea": "La idea",
+      "system": "El sistema",
+      "deliverables": "Entregables",
+      "tools": "Herramientas",
+      "palette": "Paleta",
+      "type": "Tipografía"
+    },
+    "projects": [
+      {
+        "id": "nacar",
+        "name": "Nácar",
+        "client": "Joyería de autor",
+        "discipline": "Identidad de marca",
+        "brief": "Una joyería que trabaja plata y nácar necesitaba una identidad tan delicada como sus piezas, y lo bastante firme para vivir en una caja de cinco centímetros.",
+        "idea": "La marca nace del brillo del nácar: una N de trazos finos y gruesos, como grabada, sobre un disco que cambia de color según cómo le da la luz.",
+        "system": "Monograma, logotipo en una serif de alto contraste, paleta perla y tinta, y un estampado de ondas finas, como las vetas del nácar.",
+        "deliverables": ["Monograma y logotipo", "Manual de marca", "Tarjetas y etiquetas", "Caja y bolsa"],
+        "palette": [["Perla", "#EDE6DD"], ["Tinta", "#151317"], ["Nácar", "#C9B8D6"], ["Plata", "#A7A9AC"]]
+      },
+      {
+        "id": "umbral",
+        "name": "Umbral",
+        "client": "Revista de arquitectura",
+        "discipline": "Diseño editorial",
+        "brief": "Una revista trimestral de arquitectura quería volver al papel con una diagramación que respire como los edificios que publica.",
+        "idea": "Cada número se arma sobre una retícula de doce columnas que se deja ver: líneas finas que la portada muestra sin vergüenza.",
+        "system": "Portadas tipográficas, retícula modular, jerarquía en tres niveles y fotografía a sangre.",
+        "deliverables": ["Portada y maqueta", "Retícula y estilos", "Plantillas de InDesign", "Preimpresión"],
+        "palette": [["Hormigón", "#D9D6CF"], ["Grafito", "#2B2B2E"], ["Señal", "#E4572E"]]
+      },
+      {
+        "id": "olalenta",
+        "name": "Ola Lenta",
+        "client": "Festival de cine lento",
+        "discipline": "Cartelería y motion",
+        "brief": "Un festival de cine contemplativo necesitaba una serie de afiches que invitara a frenar.",
+        "idea": "Tres afiches, tres velocidades: la misma onda se estira de un afiche a otro hasta quedar casi quieta.",
+        "system": "Serie de afiches, piezas para redes y animaciones cortas, todo a partir de la misma onda.",
+        "deliverables": ["Serie de tres afiches", "Piezas para redes", "Animaciones de 6 s"],
+        "palette": [["Noche", "#101626"], ["Bruma", "#8FA3BF"], ["Faro", "#F2C14E"]]
+      },
+      {
+        "id": "almacigo",
+        "name": "Almácigo",
+        "client": "Semillas para huerta",
+        "discipline": "Packaging e ilustración",
+        "brief": "Una marca de semillas para huertas urbanas quería sobres que se entendieran de un vistazo en la góndola.",
+        "idea": "Cada variedad tiene su ilustración y su color; cuándo sembrar se lee en un calendario gráfico, sin texto chico.",
+        "system": "Sistema de sobres, ilustraciones vectoriales por variedad, calendario de siembra y troquel.",
+        "deliverables": ["Seis sobres", "Ilustraciones", "Troquel y artes finales", "Exhibidor"],
+        "palette": [["Tierra", "#6B4F3A"], ["Brote", "#7FA650"], ["Tomate", "#D9472B"], ["Papel", "#F1EAD8"]]
+      },
+      {
+        "id": "vertigo",
+        "name": "Vértigo",
+        "client": "Serie de suspenso",
+        "discipline": "Secuencia de títulos",
+        "brief": "Una serie de suspenso necesitaba una secuencia de títulos de treinta segundos.",
+        "idea": "Las líneas giran hacia el centro como una escalera en espiral; el título aparece cuando el vértigo se detiene.",
+        "system": "Storyboard, tipografía cinética, ritmo cortado al sonido y versiones para redes.",
+        "deliverables": ["Secuencia de 30 s", "Storyboard", "Cortes de 6 y 15 s"],
+        "palette": [["Vacío", "#0B0B0D"], ["Hueso", "#E8E2D6"], ["Alarma", "#C1121F"]]
+      },
+      {
+        "id": "lumbre",
+        "name": "Lumbre",
+        "client": "Velas aromáticas",
+        "discipline": "Dirección de arte y retoque",
+        "brief": "Una marca de velas quería una campaña cálida que no cayera en lo obvio.",
+        "idea": "Toda la campaña está iluminada por la llama: una sola fuente de luz, fondos profundos y un retoque que cuida la textura de la cera.",
+        "system": "Dirección de arte, retoque y color, afiches y piezas para redes.",
+        "deliverables": ["Imagen principal", "Retoque y color", "Afiches", "Piezas para redes"],
+        "palette": [["Humo", "#1A1412"], ["Cera", "#EADBC8"], ["Llama", "#F29E38"]]
+      }
+    ]
+  },
+  "tools": {
+    "label": "Herramientas",
+    "title": "La suite completa.",
+    "lead": "Abigail conoce cada herramienta de Adobe por dentro y elige la justa para cada etapa. Cada una, con un atajo que conviene tener en los dedos.",
+    "shortcut": "Atajo",
+    "panel": "Capas",
+    "also": "Y también",
+    "alsoList": ["Figma", "Procreate", "Blender", "Cinema 4D", "DaVinci Resolve"],
+    "items": [
+      { "id": "ps", "name": "Photoshop", "role": "Retoque, composición y fotomontaje", "key": "⌘ J", "keyLabel": "Duplicar capa" },
+      { "id": "ai", "name": "Illustrator", "role": "Marcas, ilustración y vectores", "key": "P", "keyLabel": "Pluma" },
+      { "id": "id", "name": "InDesign", "role": "Editorial, catálogos y preimpresión", "key": "⌘ D", "keyLabel": "Colocar" },
+      { "id": "ae", "name": "After Effects", "role": "Motion graphics y títulos", "key": "U", "keyLabel": "Ver fotogramas clave" },
+      { "id": "pr", "name": "Premiere Pro", "role": "Edición de video", "key": "C", "keyLabel": "Cuchilla" },
+      { "id": "lr", "name": "Lightroom", "role": "Revelado y color", "key": "R", "keyLabel": "Recortar" },
+      { "id": "ac", "name": "Acrobat Pro", "role": "Control de preimpresión", "key": "PDF/X-4", "keyLabel": "Preflight" },
+      { "id": "ff", "name": "Firefly", "role": "Exploración con IA generativa", "key": "Prompt", "keyLabel": "Texto a imagen" },
+      { "id": "s3", "name": "Substance 3D", "role": "Mockups y materiales 3D", "key": "PBR", "keyLabel": "Materiales" }
+    ],
+    "demo": {
+      "layer": "Capa",
+      "prompt": "afiche, onda, atardecer",
+      "checks": ["CMYK", "300 dpi", "Sangrado 3 mm", "Fuentes incrustadas", "PDF/X-4"]
+    }
+  },
+  "process": {
+    "label": "Proceso",
+    "title": "Del brief al arte final.",
+    "steps": [
+      { "name": "Brief", "body": "Escuchar primero: qué se quiere decir, a quién y con qué recursos." },
+      { "name": "Investigación", "body": "Referencias, competencia y contexto. Un moodboard con criterio, no una pila de imágenes." },
+      { "name": "Bocetos", "body": "Muchas ideas en papel antes de abrir la computadora. Se eligen dos o tres para desarrollar." },
+      { "name": "Sistema", "body": "La idea se vuelve reglas: color, tipografía, retícula y cómo se aplica en cada pieza." },
+      { "name": "Arte final", "body": "Archivos revisados para imprenta o pantalla: CMYK, 300 dpi, sangrado y fuentes incluidas." }
+    ]
+  },
+  "manifesto": {
+    "label": "Manifiesto",
+    "text": "Un buen diseño no se nota. Se siente, se recuerda y se elige otra vez."
+  },
+  "contact": {
+    "label": "Contacto",
+    "title": "¿Tenés un proyecto?",
+    "title2": "Hablemos.",
+    "body": "Una marca nueva, una revista, un empaque o una campaña. Contale tu idea y empiecen por el primer boceto.",
+    "email": "Escribir un correo",
+    "pending": "Canales de contacto: a completar.",
+    "channels": "Canales"
+  },
+  "footer": {
+    "rights": "© 2026 Abigail Caricato",
+    "colophon": "Compuesto en Bodoni Moda, Hanken Grotesk y DM Mono.",
+    "note": "Los proyectos son conceptuales: marcas y encargos ficticios.",
+    "top": "Volver arriba"
+  }
+}
